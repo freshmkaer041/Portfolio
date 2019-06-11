@@ -63,7 +63,7 @@ body {
 
 .active {
     display: block;
-    height: 150px;
+    height: 170px;
     opacity: 1;
 }
 
@@ -147,7 +147,6 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 25vh;
 }
 
 .cv-button {
@@ -199,6 +198,10 @@ p {
     text-align: center;
 }
 
+.my-abilities i {
+    font-size: 15vh;
+}
+
 .my-abilities h2 {
     margin: 20px 10px 10px 10px;
 }
@@ -207,9 +210,29 @@ p {
     margin: 20px 10px 10px 10px;
 }
 
+.center-square {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin-top: 5%;
+
+}
+
+.square:first-of-type {
+    margin-left: 0%;
+}
+
 .contact-section {
     margin: 20px 10px 10px 10px;
     background-color: #f6f7fd;
+    width: 100vw;
 }
 
 footer {
@@ -325,29 +348,26 @@ footer p {
     .my-projects h2,
     .contact-section h2 {
         font-size: 50px;
+        text-align: center;
     }
 
+    .about-me {
+        text-align: center;
+    }
+
+    .center {
+        margin-left: 25vh;
+    }
 
 
     .center-square {
         margin-left: 25vh;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-around;
     }
 
     .square {
-        width: 200px;
-        height: 200px;
-        background-color: red;
-        margin-top: 5%;
-
+        height: 20vh;
     }
 
-    .square:first-of-type {
-        margin-left: 0%;
-    }
 
     .icons {
         width: 100%;
@@ -361,6 +381,9 @@ footer p {
         margin-left: 80px;
     }
 
+    .my-projects {
+        text-align: center;
+    }
 
     .contact-icons {
         width: 100%;
