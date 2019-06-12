@@ -207,6 +207,7 @@ p {
 
 .my-abilities h2 {
     margin: 20px 10px 10px 10px;
+    padding-top: 10px;
 }
 
 .my-projects h2 {
@@ -243,10 +244,12 @@ p {
 .contact-section {
     background-color: #f6f7fd;
     width: 100%;
+    margin-bottom: -2vh;
 }
 
 .contact-section h2 {
     margin: 20px 10px 10px 10px;
+    padding-top: 10px;
 }
 
 
@@ -420,7 +423,7 @@ footer p {
         color: black;
     }
 
-    .contact-icons a:hover {
+    .contact-icons i:hover {
         color: blue;
     }
 }
