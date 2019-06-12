@@ -49,9 +49,7 @@ body {
     background-color: #041235;
     width: 100%;
     left: 0;
-    top: 100%;
     z-index: 1;
-
 }
 
 
@@ -172,7 +170,6 @@ p {
     font-size: 15px;
     font-weight: bold;
     padding: 6px 24px;
-    text-decoration: none;
     text-shadow: 0px 1px 0px #ffffff;
 
 }
@@ -193,6 +190,12 @@ p {
     top: 1px;
 }
 
+.cv-button a {
+    text-decoration: none;
+    color: black;
+
+}
+
 .my-abilities {
     background-color: #f6f7fd;
     text-align: center;
@@ -208,6 +211,14 @@ p {
 
 .my-projects h2 {
     margin: 20px 10px 10px 10px;
+}
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 2vh;
+
 }
 
 .center-square {
@@ -230,10 +241,29 @@ p {
 }
 
 .contact-section {
-    margin: 20px 10px 10px 10px;
     background-color: #f6f7fd;
-    width: 100vw;
+    width: 100%;
 }
+
+.contact-section h2 {
+    margin: 20px 10px 10px 10px;
+}
+
+
+.contact-icons {
+    font-size: 50px;
+    text-align: center;
+}
+
+.contact-icons i {
+    margin-left: 20px;
+    color: black;
+}
+
+.contact-icons i:last-of-type {
+    margin-right: 20px;
+}
+
 
 footer {
     background-color: #041235;
@@ -247,22 +277,6 @@ footer p {
     top: 50px;
 
 
-}
-
-@media (min-width:320px) {
-    /* smartphones, iPhone, portrait 480x320 phones */
-}
-
-@media (min-width:481px) {
-    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
-}
-
-@media (min-width:641px) {
-    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-}
-
-@media (min-width:961px) {
-    /* tablet, landscape iPad, lo-res laptops ands desktops */
 }
 
 @media (min-width:1025px) {
@@ -339,7 +353,7 @@ footer p {
 
     .content-wrap h2,
     p {
-        padding-left: 28vh;
+        padding-left: 25vh;
     }
 
 
@@ -362,12 +376,8 @@ footer p {
 
     .center-square {
         margin-left: 25vh;
+        padding-bottom: 2vh;
     }
-
-    .square {
-        height: 20vh;
-    }
-
 
     .icons {
         width: 100%;
@@ -385,6 +395,11 @@ footer p {
         text-align: center;
     }
 
+    .contact-section {
+        display: block;
+        width: 100%;
+    }
+
     .contact-icons {
         width: 100%;
         font-size: 50px;
@@ -399,10 +414,13 @@ footer p {
     .contact-icons i {
         margin-left: 25vh;
     }
-}
 
-@media (min-width:1281px) {
+    .contact-icons a {
+        text-decoration: none;
+        color: black;
+    }
 
-    /* hi-res laptops and desktops */
-
+    .contact-icons a:hover {
+        color: blue;
+    }
 }
